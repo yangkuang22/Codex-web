@@ -1,0 +1,39 @@
+{
+  "name": "codex-local-web",
+  "version": "2.0.0",
+  "description": "零依赖的本地 Codex 网页工作空间，支持 ST 预设、指令替换和 assistant 历史",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangkuang22/Codex-web.git"
+  },
+  "homepage": "https://github.com/yangkuang22/Codex-web#readme",
+  "bugs": {
+    "url": "https://github.com/yangkuang22/Codex-web/issues"
+  },
+  "bin": {
+    "codex-web": "server.js"
+  },
+  "files": [
+    "server.js",
+    "codex-client.js",
+    "codex-backend.js",
+    "preset-gateway.js",
+    "presets.js",
+    "index.html",
+    "bin/",
+    "examples/",
+    "scripts/",
+    "start-windows.bat",
+    "start-windows-lan.bat"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "check": "node scripts/check.js",
+    "test": "node --test"
+  },
+  "keywords": ["codex", "openai", "web-ui", "presets"],
+  "license": "MIT"
+}
